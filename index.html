@@ -14,13 +14,24 @@
         <!-- Camera sensor -->
         <canvas id="camera--sensor"></canvas>
         <!-- Camera view -->
-        <video id="camera--view" autoplay playsinline></video>
-        <!-- Camera output -->
+		<div id="video-wrap" style="position: absolute;">
+		        <video id="camera--view" autoplay playsinline></video>
+		</div>
+		<!-- Camera output -->
+		<div id="video_stream" style="position: absolute;">
         <img src="//:0" alt="" id="camera--output">
+		</div>
+		<!-- Add mask -->
+		<div id="mask" style="position: absolute;">
+			<img src=".\mask_male.png" width="100%">
+		</div>
         <!-- Camera trigger -->
         <button id="camera--trigger">Take a picture</button>
+		<!-- proceed to adress and payment -->
+		<button id="proceed" onClick="window.location.href='\proceed.html'">Proceed</button>
+		
     </main>
     <!-- Reference to your JavaScript file -->
-    <script src="app.js"></script>
+    <script src=".\app.js"></script>
 </body>
 </html>
